@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>misc_files/pictures/folder.png</file>
+        <file>misc_files/pictures/save.png</file>
+        <file>misc_files/pictures/help.png</file>
+        <file>misc_files/txt/about.txt</file>
+    </qresource>
+</RCC>

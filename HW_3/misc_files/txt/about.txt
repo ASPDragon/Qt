@@ -1,0 +1,2 @@
+Text/HTML editor v1.0.0
+contacts: aspdrago@gmail.com
