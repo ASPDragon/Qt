@@ -119,15 +119,21 @@
            <height>100</height>
           </size>
          </property>
+         <property name="toolTip">
+          <string extracomment="Bold"/>
+         </property>
          <property name="text">
-          <string>Bold</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="underlinePushButton">
+         <property name="toolTip">
+          <string extracomment="Underline text"/>
+         </property>
          <property name="text">
-          <string>Underline</string>
+          <string/>
          </property>
         </widget>
        </item>
@@ -178,7 +184,7 @@
      <string>Edit</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menuPreferences">
+   <widget class="QMenu" name="menuSettings">
     <property name="title">
      <string>Settings</string>
     </property>
@@ -208,7 +214,7 @@
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
-   <addaction name="menuPreferences"/>
+   <addaction name="menuSettings"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

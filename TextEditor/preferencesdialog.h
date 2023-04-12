@@ -23,7 +23,7 @@ private slots:
     void on_buttonBox_rejected();
 
 signals:
-    void mapUpdate();
+    void mapUpdate(const QMap<QString, QKeySequence>&);
 
 private:
     Ui::PreferencesDialog *ui;

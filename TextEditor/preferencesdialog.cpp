@@ -44,7 +44,7 @@ void PreferencesDialog::on_buttonBox_accepted()
             qDebug() << "Error!";
     }
     settings->write();
-    emit mapUpdate();
+    emit mapUpdate(settings.data()->getMap());
     this->close();
 }
 

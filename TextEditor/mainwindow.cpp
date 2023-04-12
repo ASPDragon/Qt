@@ -29,6 +29,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->currentLanguageLabel->setPixmap(QPixmap(":/misc_files/pictures/united-kingdom.png")
                                         .scaled(25, 50, Qt::KeepAspectRatio));
 
+    ui->boldPushButton->setIcon(QPixmap(":/misc_files/pictures/bold.png"));
+    ui->underlinePushButton->setIcon(QPixmap(":/misc_files/pictures/underlined-text.png"));
+
     menuMap.insert(ui->actionNew->text(), ui->actionNew);
     menuMap.insert(ui->actionOpen->text(), ui->actionOpen);
     menuMap.insert(ui->actionRead_Only->text(), ui->actionRead_Only);
@@ -101,14 +104,14 @@ void MainWindow::on_aboutPushButton_clicked()
 void MainWindow::on_actionPreferences_triggered()
 {
     auto preferences = new PreferencesDialog(std::move(settings), this);
-    connect(preferences, SIGNAL(mapUpdate()), this, SLOT([&](const QMap<QString, QKeySequence>& seqMap) {
+    connect(preferences, &PreferencesDialog::mapUpdate, [&](const QMap<QString, QKeySequence>& seqMap) {
         for (auto sequence : seqMap.asKeyValueRange()) {
             auto it = menuMap.find(sequence.first);
 
             if (it != menuMap.end())
                 it.value()->setShortcut(sequence.second);
         }
-    }));
+    });
     preferences->exec();
 }
 

@@ -47,6 +47,7 @@ protected:
 private:
     void changeEvent(QEvent *) override;
     void createAction(const char *, QAction *, QIcon &&, QKeySequence, bool);
+    void mapUpdate(QMap<QString, QAction*>& newValue);
 
     Ui::MainWindow *ui;
     QSharedPointer<QMenu> menuFile;

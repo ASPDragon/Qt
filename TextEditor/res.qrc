@@ -10,5 +10,7 @@
         <file>misc_files/pictures/united-kingdom.png</file>
         <file>misc_files/pictures/logout.png</file>
         <file>misc_files/translate/QtLanguage_ru.qm</file>
+        <file>misc_files/pictures/bold.png</file>
+        <file>misc_files/pictures/underlined-text.png</file>
     </qresource>
 </RCC>
