@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>misc_files/pictures/folder.png</file>
+        <file>misc_files/pictures/help.png</file>
+        <file>misc_files/pictures/save.png</file>
+        <file>misc_files/txt/about.txt</file>
+        <file>misc_files/pictures/new-project.png</file>
+        <file>misc_files/pictures/read_only.png</file>
+        <file>misc_files/pictures/russia.png</file>
+        <file>misc_files/pictures/united-kingdom.png</file>
+        <file>misc_files/pictures/logout.png</file>
+        <file>misc_files/translate/QtLanguage_ru.qm</file>
+        <file>misc_files/pictures/bold.png</file>
+        <file>misc_files/pictures/underlined-text.png</file>
+    </qresource>
+</RCC>
